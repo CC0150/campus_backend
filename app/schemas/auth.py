@@ -1,8 +1,8 @@
-from pydantic import BaseModel, Field, ConfigDict
+from pydantic import BaseModel, Field, ConfigDict, AliasChoices
 
 
 class UserLogin(BaseModel):
-    student_id: str = Field(alias="studentId")
+    student_id: str = Field(validation_alias=AliasChoices("studentId", "username"))
     password: str
 
     model_config = ConfigDict(populate_by_name=True)

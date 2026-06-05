@@ -8,5 +8,6 @@ class DishSchema(BaseModel):
     image: str
     category: str
     sales: int
+    shop_id: str = ""
 
     model_config = ConfigDict(from_attributes=True)

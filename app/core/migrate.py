@@ -39,4 +39,13 @@ def migrate_db(engine: Engine) -> None:
         if "image" not in shop_cols:
             conn.execute(text("ALTER TABLE shops ADD COLUMN image VARCHAR DEFAULT '🍽️'"))
 
+        # ─── feedbacks 表 ───
+        result = conn.execute(text("PRAGMA table_info(feedbacks)"))
+        fb_cols = {row[1] for row in result}
+
+        if "student_read" not in fb_cols:
+            conn.execute(text("ALTER TABLE feedbacks ADD COLUMN student_read BOOLEAN DEFAULT 1"))
+        if "student_deleted" not in fb_cols:
+            conn.execute(text("ALTER TABLE feedbacks ADD COLUMN student_deleted BOOLEAN DEFAULT 0"))
+
         conn.commit()

@@ -1,13 +1,17 @@
 from contextlib import asynccontextmanager
 
+import os
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 
 from app.models import Base
 import app.models.shop  # noqa: F401
 import app.models.dish  # noqa: F401
 import app.models.order  # noqa: F401
 import app.models.user  # noqa: F401
+import app.models.feedback  # noqa: F401
 
 from app.core.database import engine
 from app.core.migrate import migrate_db
@@ -34,17 +38,25 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=["http://localhost:3000", "http://localhost:5173"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-from app.api.v1.endpoints import shops, orders, auth
+from app.api.v1.endpoints import shops, orders, auth, admin, feedback
 
 app.include_router(auth.router, prefix="/api/v1")
 app.include_router(shops.router, prefix="/api/v1")
 app.include_router(orders.router, prefix="/api/v1")
+app.include_router(admin.router, prefix="/api/v1")
+app.include_router(feedback.router, prefix="/api/v1")
+app.include_router(feedback.admin_router, prefix="/api/v1")
+
+# 静态文件服务 — 上传的图片通过 /uploads/ 访问
+uploads_dir = os.path.join(os.path.dirname(__file__), "..", "uploads")
+os.makedirs(uploads_dir, exist_ok=True)
+app.mount("/uploads", StaticFiles(directory=uploads_dir), name="uploads")
 
 
 @app.get("/")

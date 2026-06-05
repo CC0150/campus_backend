@@ -10,6 +10,7 @@ class OrderItemSchema(BaseModel):
 
 class OrderSchema(BaseModel):
     id: str
+    studentId: str = Field(alias="student_id")
     shopName: str = Field(alias="shop_name")
     items: list[OrderItemSchema]
     totalPrice: float = Field(alias="total_price")

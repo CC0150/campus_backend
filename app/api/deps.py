@@ -17,6 +17,7 @@ from sqlalchemy.orm import Session
 
 from app.core.database import get_db
 from app.core.security import decode_access_token
+from app.models.user import User
 from app.services.auth_service import get_user_by_student_id
 
 # Bearer 令牌安全方案（从 Authorization 请求头提取令牌）
@@ -71,3 +72,15 @@ def get_current_user(
         )
 
     return user
+
+
+def get_admin_user(
+    current_user: User = Depends(get_current_user),
+):
+    """管理员鉴权 — 仅允许 admin 账号访问管理接口"""
+    if current_user.student_id != 'admin':
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail="需要管理员权限",
+        )
+    return current_user

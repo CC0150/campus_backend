@@ -16,7 +16,7 @@ SHOP_SEEDS = [
         id="1",
         name="精品·西苑手工面馆",
         rating=4.8,
-        sales=2834,
+        sales=980,
         min_order=12.0,
         delivery_fee=2.0,
         delivery_time=25,
@@ -30,7 +30,7 @@ SHOP_SEEDS = [
         id="2",
         name="精品·东门湘味小炒",
         rating=4.5,
-        sales=3105,
+        sales=960,
         min_order=15.0,
         delivery_fee=3.0,
         delivery_time=30,
@@ -46,7 +46,7 @@ SHOP_SEEDS = [
         id="3",
         name="原豆·瑞幸咖啡校园店",
         rating=4.7,
-        sales=4520,
+        sales=990,
         min_order=9.0,
         delivery_fee=1.0,
         delivery_time=15,
@@ -60,7 +60,7 @@ SHOP_SEEDS = [
         id="4",
         name="原豆·星巴克咖啡服务站",
         rating=4.9,
-        sales=3210,
+        sales=970,
         min_order=15.0,
         delivery_fee=1.0,
         delivery_time=18,
@@ -76,7 +76,7 @@ SHOP_SEEDS = [
         id="5",
         name="甜品·DQ冰雪皇后校园店",
         rating=4.8,
-        sales=5630,
+        sales=990,
         min_order=10.0,
         delivery_fee=2.0,
         delivery_time=20,
@@ -90,7 +90,7 @@ SHOP_SEEDS = [
         id="6",
         name="甜品·鲜芋仙台式甜水铺",
         rating=4.6,
-        sales=2180,
+        sales=920,
         min_order=12.0,
         delivery_fee=2.0,
         delivery_time=22,
@@ -106,7 +106,7 @@ SHOP_SEEDS = [
         id="7",
         name="西式·麦德堡校园汉堡店",
         rating=4.4,
-        sales=6780,
+        sales=990,
         min_order=12.0,
         delivery_fee=2.0,
         delivery_time=20,
@@ -120,7 +120,7 @@ SHOP_SEEDS = [
         id="8",
         name="西式·必胜客披萨校园站",
         rating=4.6,
-        sales=3890,
+        sales=980,
         min_order=20.0,
         delivery_fee=3.0,
         delivery_time=28,
@@ -136,7 +136,7 @@ SHOP_SEEDS = [
         id="9",
         name="麻辣·杨国福麻辣烫校园店",
         rating=4.5,
-        sales=5210,
+        sales=990,
         min_order=10.0,
         delivery_fee=2.0,
         delivery_time=22,
@@ -150,7 +150,7 @@ SHOP_SEEDS = [
         id="10",
         name="麻辣·转转小火锅工坊",
         rating=4.3,
-        sales=2670,
+        sales=940,
         min_order=15.0,
         delivery_fee=3.0,
         delivery_time=30,
@@ -166,7 +166,7 @@ SHOP_SEEDS = [
         id="11",
         name="暖胃·老火靓汤炖品世家",
         rating=4.7,
-        sales=1980,
+        sales=880,
         min_order=10.0,
         delivery_fee=2.0,
         delivery_time=25,
@@ -180,7 +180,7 @@ SHOP_SEEDS = [
         id="12",
         name="暖胃·阿婆牛杂汤粉馆",
         rating=4.5,
-        sales=3450,
+        sales=970,
         min_order=8.0,
         delivery_fee=1.0,
         delivery_time=20,
@@ -196,7 +196,7 @@ SHOP_SEEDS = [
         id="13",
         name="下午茶·奶茶星球 Bubble Planet",
         rating=4.9,
-        sales=5821,
+        sales=990,
         min_order=8.0,
         delivery_fee=1.0,
         delivery_time=15,
@@ -210,7 +210,7 @@ SHOP_SEEDS = [
         id="14",
         name="下午茶·好利来烘焙工坊",
         rating=4.6,
-        sales=2890,
+        sales=950,
         min_order=10.0,
         delivery_fee=2.0,
         delivery_time=22,
@@ -226,7 +226,7 @@ SHOP_SEEDS = [
         id="15",
         name="生日·幸福西饼蛋糕定制",
         rating=4.8,
-        sales=1650,
+        sales=850,
         min_order=25.0,
         delivery_fee=3.0,
         delivery_time=40,
@@ -240,7 +240,7 @@ SHOP_SEEDS = [
         id="16",
         name="生日·巴黎贝甜烘焙坊",
         rating=4.7,
-        sales=1340,
+        sales=820,
         min_order=20.0,
         delivery_fee=3.0,
         delivery_time=35,
@@ -256,15 +256,15 @@ DISH_SEEDS = [
     # ═══════════════════════════════════════════════════════
     # 1. 精品·西苑手工面馆 (shop_id=1)
     # ═══════════════════════════════════════════════════════
-    Dish(id="101", name="招牌牛肉拉面", price=15.0, image="🍜", category="拉面", sales=1203, shop_id="1"),
+    Dish(id="101", name="招牌牛肉拉面", price=15.0, image="🍜", category="拉面", sales=980, shop_id="1"),
     Dish(id="102", name="香菇滑鸡双拼饭", price=14.0, image="🍛", category="米饭", sales=856, shop_id="1"),
-    Dish(id="103", name="老北京炸酱面", price=12.0, image="🍝", category="拌面", sales=1021, shop_id="1"),
+    Dish(id="103", name="老北京炸酱面", price=12.0, image="🍝", category="拌面", sales=890, shop_id="1"),
     Dish(id="104", name="番茄鸡蛋刀削面", price=10.0, image="🥘", category="汤面", sales=678, shop_id="1"),
 
     # ═══════════════════════════════════════════════════════
     # 2. 精品·东门湘味小炒 (shop_id=2)
     # ═══════════════════════════════════════════════════════
-    Dish(id="201", name="辣椒炒肉", price=16.0, image="🌶️", category="小炒", sales=1500, shop_id="2"),
+    Dish(id="201", name="辣椒炒肉", price=16.0, image="🌶️", category="小炒", sales=960, shop_id="2"),
     Dish(id="202", name="剁椒鱼头", price=28.0, image="🐟", category="大菜", sales=890, shop_id="2"),
     Dish(id="203", name="蒜蓉西兰花", price=10.0, image="🥦", category="素菜", sales=543, shop_id="2"),
     Dish(id="204", name="农家小炒肉盖饭", price=15.0, image="🍖", category="盖饭", sales=920, shop_id="2"),
@@ -272,8 +272,8 @@ DISH_SEEDS = [
     # ═══════════════════════════════════════════════════════
     # 3. 原豆·瑞幸咖啡校园店 (shop_id=3)
     # ═══════════════════════════════════════════════════════
-    Dish(id="301", name="生椰拿铁", price=13.0, image="🥥", category="拿铁", sales=2100, shop_id="3"),
-    Dish(id="302", name="美式咖啡", price=9.0, image="☕", category="美式", sales=1500, shop_id="3"),
+    Dish(id="301", name="生椰拿铁", price=13.0, image="🥥", category="拿铁", sales=990, shop_id="3"),
+    Dish(id="302", name="美式咖啡", price=9.0, image="☕", category="美式", sales=880, shop_id="3"),
     Dish(id="303", name="陨石厚乳拿铁", price=16.0, image="💫", category="拿铁", sales=890, shop_id="3"),
     Dish(id="304", name="橙C美式", price=12.0, image="🍊", category="美式", sales=670, shop_id="3"),
 
@@ -281,22 +281,22 @@ DISH_SEEDS = [
     # 4. 原豆·星巴克咖啡服务站 (shop_id=4)
     # ═══════════════════════════════════════════════════════
     Dish(id="401", name="焦糖玛奇朵", price=18.0, image="🍮", category="玛奇朵", sales=980, shop_id="4"),
-    Dish(id="402", name="抹茶星冰乐", price=20.0, image="🍵", category="星冰乐", sales=1230, shop_id="4"),
+    Dish(id="402", name="抹茶星冰乐", price=20.0, image="🍵", category="星冰乐", sales=850, shop_id="4"),
     Dish(id="403", name="拿铁咖啡", price=15.0, image="☕", category="拿铁", sales=760, shop_id="4"),
     Dish(id="404", name="冷萃冰咖啡", price=17.0, image="🧊", category="冷萃", sales=540, shop_id="4"),
 
     # ═══════════════════════════════════════════════════════
     # 5. 甜品·DQ冰雪皇后校园店 (shop_id=5)
     # ═══════════════════════════════════════════════════════
-    Dish(id="501", name="奥利奥暴风雪", price=18.0, image="🍪", category="暴风雪", sales=2300, shop_id="5"),
-    Dish(id="502", name="草莓华夫脆", price=20.0, image="🍓", category="暴风雪", sales=1620, shop_id="5"),
+    Dish(id="501", name="奥利奥暴风雪", price=18.0, image="🍪", category="暴风雪", sales=990, shop_id="5"),
+    Dish(id="502", name="草莓华夫脆", price=20.0, image="🍓", category="暴风雪", sales=920, shop_id="5"),
     Dish(id="503", name="巧克力甜筒", price=8.0, image="🍫", category="甜筒", sales=980, shop_id="5"),
     Dish(id="504", name="芒果冰沙", price=15.0, image="🥭", category="冰沙", sales=730, shop_id="5"),
 
     # ═══════════════════════════════════════════════════════
     # 6. 甜品·鲜芋仙台式甜水铺 (shop_id=6)
     # ═══════════════════════════════════════════════════════
-    Dish(id="601", name="招牌芋圆4号", price=16.0, image="🍡", category="芋圆", sales=1120, shop_id="6"),
+    Dish(id="601", name="招牌芋圆4号", price=16.0, image="🍡", category="芋圆", sales=820, shop_id="6"),
     Dish(id="602", name="红豆豆花", price=12.0, image="🫘", category="豆花", sales=780, shop_id="6"),
     Dish(id="603", name="仙草冻奶茶", price=14.0, image="🧋", category="奶茶", sales=650, shop_id="6"),
     Dish(id="604", name="芒果冰沙", price=15.0, image="🥭", category="冰沙", sales=430, shop_id="6"),
@@ -304,10 +304,10 @@ DISH_SEEDS = [
     # ═══════════════════════════════════════════════════════
     # 7. 西式·麦德堡校园汉堡店 (shop_id=7)
     # ═══════════════════════════════════════════════════════
-    Dish(id="701", name="巨无霸牛肉堡", price=19.0, image="🍔", category="汉堡", sales=2520, shop_id="7"),
-    Dish(id="702", name="香辣鸡腿堡", price=15.0, image="🍗", category="汉堡", sales=1980, shop_id="7"),
-    Dish(id="703", name="黄金鸡块（10块装）", price=18.0, image="✨", category="小食", sales=1340, shop_id="7"),
-    Dish(id="704", name="薯条大份", price=10.0, image="🍟", category="小食", sales=1120, shop_id="7"),
+    Dish(id="701", name="巨无霸牛肉堡", price=19.0, image="🍔", category="汉堡", sales=990, shop_id="7"),
+    Dish(id="702", name="香辣鸡腿堡", price=15.0, image="🍗", category="汉堡", sales=950, shop_id="7"),
+    Dish(id="703", name="黄金鸡块（10块装）", price=18.0, image="✨", category="小食", sales=860, shop_id="7"),
+    Dish(id="704", name="薯条大份", price=10.0, image="🍟", category="小食", sales=780, shop_id="7"),
 
     # ═══════════════════════════════════════════════════════
     # 8. 西式·必胜客披萨校园站 (shop_id=8)
@@ -320,15 +320,15 @@ DISH_SEEDS = [
     # ═══════════════════════════════════════════════════════
     # 9. 麻辣·杨国福麻辣烫校园店 (shop_id=9)
     # ═══════════════════════════════════════════════════════
-    Dish(id="901", name="自选麻辣烫（荤素搭配）", price=18.0, image="🥘", category="麻辣烫", sales=2310, shop_id="9"),
-    Dish(id="902", name="番茄骨汤麻辣烫", price=20.0, image="🍅", category="麻辣烫", sales=1650, shop_id="9"),
+    Dish(id="901", name="自选麻辣烫（荤素搭配）", price=18.0, image="🥘", category="麻辣烫", sales=990, shop_id="9"),
+    Dish(id="902", name="番茄骨汤麻辣烫", price=20.0, image="🍅", category="麻辣烫", sales=930, shop_id="9"),
     Dish(id="903", name="酸辣粉", price=10.0, image="🍜", category="粉面", sales=980, shop_id="9"),
     Dish(id="904", name="麻辣拌", price=16.0, image="🥗", category="拌菜", sales=720, shop_id="9"),
 
     # ═══════════════════════════════════════════════════════
     # 10. 麻辣·转转小火锅工坊 (shop_id=10)
     # ═══════════════════════════════════════════════════════
-    Dish(id="1001", name="牛油麻辣单人锅", price=25.0, image="🍲", category="火锅", sales=1120, shop_id="10"),
+    Dish(id="1001", name="牛油麻辣单人锅", price=25.0, image="🍲", category="火锅", sales=790, shop_id="10"),
     Dish(id="1002", name="番茄牛腩单人锅", price=28.0, image="🍅", category="火锅", sales=890, shop_id="10"),
     Dish(id="1003", name="菌菇清汤锅", price=22.0, image="🍄", category="火锅", sales=650, shop_id="10"),
     Dish(id="1004", name="自选涮菜拼盘", price=15.0, image="🥬", category="配菜", sales=780, shop_id="10"),
@@ -344,7 +344,7 @@ DISH_SEEDS = [
     # ═══════════════════════════════════════════════════════
     # 12. 暖胃·阿婆牛杂汤粉馆 (shop_id=12)
     # ═══════════════════════════════════════════════════════
-    Dish(id="1201", name="招牌萝卜牛杂", price=16.0, image="🐂", category="牛杂", sales=1520, shop_id="12"),
+    Dish(id="1201", name="招牌萝卜牛杂", price=16.0, image="🐂", category="牛杂", sales=940, shop_id="12"),
     Dish(id="1202", name="牛杂汤河粉", price=14.0, image="🍜", category="汤粉", sales=980, shop_id="12"),
     Dish(id="1203", name="净云吞", price=12.0, image="🥟", category="云吞", sales=650, shop_id="12"),
     Dish(id="1204", name="牛三星汤", price=18.0, image="🍲", category="汤品", sales=430, shop_id="12"),
@@ -352,16 +352,16 @@ DISH_SEEDS = [
     # ═══════════════════════════════════════════════════════
     # 13. 下午茶·奶茶星球 Bubble Planet (shop_id=13)
     # ═══════════════════════════════════════════════════════
-    Dish(id="1301", name="经典珍珠奶茶", price=10.0, image="🧋", category="奶茶", sales=2300, shop_id="13"),
-    Dish(id="1302", name="杨枝甘露", price=15.0, image="🥭", category="果茶", sales=1850, shop_id="13"),
-    Dish(id="1303", name="芝士葡萄", price=18.0, image="🍇", category="芝士茶", sales=1100, shop_id="13"),
+    Dish(id="1301", name="经典珍珠奶茶", price=10.0, image="🧋", category="奶茶", sales=990, shop_id="13"),
+    Dish(id="1302", name="杨枝甘露", price=15.0, image="🥭", category="果茶", sales=950, shop_id="13"),
+    Dish(id="1303", name="芝士葡萄", price=18.0, image="🍇", category="芝士茶", sales=780, shop_id="13"),
     Dish(id="1304", name="满杯红柚", price=16.0, image="🍊", category="果茶", sales=680, shop_id="13"),
 
     # ═══════════════════════════════════════════════════════
     # 14. 下午茶·好利来烘焙工坊 (shop_id=14)
     # ═══════════════════════════════════════════════════════
     Dish(id="1401", name="黄油可颂", price=12.0, image="🥐", category="面包", sales=980, shop_id="14"),
-    Dish(id="1402", name="半熟芝士", price=18.0, image="🧀", category="蛋糕", sales=1230, shop_id="14"),
+    Dish(id="1402", name="半熟芝士", price=18.0, image="🧀", category="蛋糕", sales=850, shop_id="14"),
     Dish(id="1403", name="蛋黄酥礼盒（4枚装）", price=22.0, image="🥮", category="糕点", sales=670, shop_id="14"),
     Dish(id="1404", name="提拉米苏杯", price=16.0, image="🍫", category="甜品", sales=540, shop_id="14"),
 
@@ -401,14 +401,34 @@ def seed_data() -> None:
 
         # ─── 初始用户种子 — 仅在无用户时填充 ───
         if db.query(User).count() == 0:
-            user = User(
-                student_id="123456",
-                name="张三",
+            admin = User(
+                student_id="admin",
+                name="管理员",
                 password_hash=get_password_hash("123456"),
+                balance=0.0,
+                avatar="🛡️",
+            )
+            db.add(admin)
+
+            user = User(
+                student_id="23408000429",
+                name="Rain",
+                password_hash=get_password_hash("111111"),
                 balance=50.0,
                 avatar="🧑‍🎓",
             )
             db.add(user)
+
+        # 补偿：确保 admin 账户始终存在
+        if not db.query(User).filter(User.student_id == "admin").first():
+            admin = User(
+                student_id="admin",
+                name="管理员",
+                password_hash=get_password_hash("123456"),
+                balance=0.0,
+                avatar="🛡️",
+            )
+            db.add(admin)
 
         db.commit()
     finally:

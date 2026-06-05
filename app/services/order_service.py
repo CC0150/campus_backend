@@ -5,6 +5,8 @@ from sqlalchemy.orm import Session
 
 from app.models.order import Order
 from app.models.user import User
+from app.models.shop import Shop
+from app.models.dish import Dish
 from app.schemas.order import OrderCreateSchema
 
 
@@ -33,6 +35,20 @@ def create_order(db: Session, data: OrderCreateSchema, user: User) -> Order:
 
     # 扣减余额
     user.balance -= data.totalPrice
+
+    # 更新商家月售
+    shop = db.query(Shop).filter(Shop.name == data.shopName).first()
+    if shop:
+        total_qty = sum(item.quantity for item in data.items)
+        shop.sales += total_qty
+
+    # 更新菜品月售
+    dish_ids = [item.id for item in data.items]
+    dishes = db.query(Dish).filter(Dish.id.in_(dish_ids)).all()
+    dish_map = {d.id: d for d in dishes}
+    for item in data.items:
+        if item.id in dish_map:
+            dish_map[item.id].sales += item.quantity
 
     order = Order(
         id=_generate_order_id(),
